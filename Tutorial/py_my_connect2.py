@@ -21,7 +21,9 @@ def connect():
         conn.close()
         print('Connection closed.')
 
-    # This does not return anything.
+    # This can't really be used for anything because it closes the connection
+    # before executing any commands. It just demonstrates the MySQLConnection
+    # object and the .is_connected() method
 
 
 

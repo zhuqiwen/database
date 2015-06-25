@@ -2,7 +2,9 @@
 
 from configparser import ConfigParser
 
-def read_db_config(filename='config.ini', section='mysql'):
+local_file = '/Users/nbrodnax/Indiana/CEWIT/mysql_auth.ini'
+
+def read_db_config(filename=local_file, section='mysql'):
     """Returns parameters from database configuration file
 
     str, str -> dict"""
