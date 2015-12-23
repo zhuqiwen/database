@@ -1,0 +1,23 @@
+
+1, What do you think the purpose of the database should be? (You can either describe this in one sentence or a  short paragraph. Hope this question doesn't bother you very much)
+
+2, Can you please describe one or multiple typic business procedures of your current work? 
+If this doesn't bother you very much, can you please describe them in details as much as possible? 
+
+(For example, after using relevent data and finish one certain task (say, sending a marketing email to all potential members who responded to certain CEWIT survey), do you keep these data (in forms of spreadsheets, csv files or any other formats) that you retrieve from SalesForce? If so, do you keep them for reuse or for any other reasons? what's the typical frequency of such reuse? and typically how long do you keep them before moving them to trash bin?? 
+
+3, Can you give me some or all business rules that you need to follow? If there is no such rules or guidance, can you give me a description of your ideal (or best-fit) rules that can accelerate your work or reduce your manual or repeated work?
+
+4, Can you describe several pieces of information that you need most frequently in your work? (for this, the more, the better.) 
+
+5, What  frequency of querying such information do you expect? (for this, the maximum helps)
+
+6, Do you need to fill any form to finish your tasks? If so, can you give me these forms? 
+
+7, Do you need to make or receive any documents to finish your tasks? If so, can you give me some samples?
+
+8, Do you expect any other major users that will have full access to the database in the near future (5 years)? If so, can you give me some details of their expected tasks?
+
+9, Do you expect any other users that only have partial access to the database now or in the near future? If so, can you give me some description of what you want them to have access to and what you don't.
+
+10, Do you expect a high level of data consistency for the database? If so, on a  1-10 scale, what level do you expect? (This is NOT very important now; if you don't have any expectation for this of any idea of how 1-10 works, we can discuss about it later )
