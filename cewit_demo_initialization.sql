@@ -66,7 +66,7 @@ CREATE TABLE `affliate` (
   `state` CHAR(255) NOT NULL,
   `iu_id` CHAR(255) NOT NULL DEFAULT '0',
   PRIMARY KEY (`af_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ---
 -- Table 'cewit_program'
@@ -88,7 +88,7 @@ CREATE TABLE `cewit_program` (
   `note` CHAR(255) NOT NULL,
   `attendance` INTEGER NOT NULL COMMENT 'this redundancy is for easy query',
   PRIMARY KEY (`program_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ---
 -- Table 'c_program_attendance'
@@ -102,7 +102,7 @@ CREATE TABLE `c_program_attendance` (
   `program_id_cewit_program` INTEGER(10) NOT NULL,
   `af_id_affliate` INTEGER(10) NOT NULL,
   PRIMARY KEY (`attendance_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ---
 -- Table 'academic_program'
@@ -119,7 +119,7 @@ CREATE TABLE `academic_program` (
   `type` CHAR(255) NOT NULL COMMENT 'academic or professional or phd or graduate or college',
   `school` CHAR(255) NOT NULL,
   PRIMARY KEY (`program_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ---
 -- Table 'a_program_enrollment'
@@ -135,7 +135,7 @@ CREATE TABLE `a_program_enrollment` (
   `start_time` DATE NOT NULL,
   `end_time` DATE NOT NULL,
   PRIMARY KEY (`enrollment_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ---
 -- Table 'skill'
@@ -162,8 +162,9 @@ CREATE TABLE `has_skill` (
   `af_id_affliate` INTEGER(10) NOT NULL,
   `skill_id_skill` INTEGER(10) NOT NULL,
   PRIMARY KEY (`has_skill_id`)
-) COMMENT 'bridging entity connecting table skill and table affiliate'
-ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- COMMENT 'bridging entity connecting table skill and table affiliate'
+
 
 -- ---
 -- Table 'interest'
@@ -176,8 +177,8 @@ CREATE TABLE `interest` (
   `interest_id` INTEGER(10) NOT NULL AUTO_INCREMENT,
   `interest_name` CHAR(255) NOT NULL,
   PRIMARY KEY (`interest_id`)
-) COMMENT 'more general than skill table; leadership, teaching, app dev'
-ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- COMMENT 'more general than skill table; leadership, teaching, app dev'
 
 -- ---
 -- Table 'is_interested'
